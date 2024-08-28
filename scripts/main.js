@@ -60,3 +60,52 @@ if (hour<=12){
 }
 
 console.log(action)
+
+console.clear()
+
+// For Loop
+
+for(let i=0; i < 9;i++){
+    console.log("we looping",i)
+}
+console.log("done looping")
+
+console.clear()
+
+let dogs = ["golden retriever", "poodle", "corgi", "pug", "husky"];
+
+for (let i = 0; i < dogs.length; i++){
+    console.log(dogs[i]);
+    console.log(i);
+}
+console.log('done looping')
+
+console.clear();
+// While Loop
+// DONT DO THIS! STUCK IN INFINITE LOOP!
+// while (1<9){
+//     console.log("let's dance");
+// }
+
+
+let number = Math.random();
+let timesRun = 0;
+console.log(number);
+
+while (number < 0.9){
+    number=Math.random();
+    console.log(number);
+    timesRun++;
+}
+
+console.log(timesRun);
+
+
+
+for (let i = 0; i < dogs.length; i++){
+    console.log("we looping");
+    if (dogs[i] === "pug"){
+    console.log(dogs[i]);
+    break;
+    }
+}
